@@ -15,7 +15,7 @@ namespace ConsoleApp1
             Console.WriteLine(newVehicle.BrandName);
             Console.WriteLine(newVehicle.ModelName);
             Console.WriteLine("Hi everyone !");
-            Console.WriteLine("for pulling")
+            Console.WriteLine("for pulling");
         }
     }
 }
