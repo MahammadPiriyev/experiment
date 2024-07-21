@@ -14,6 +14,7 @@ namespace ConsoleApp1
             Vehicle newVehicle = new Vehicle();
             Console.WriteLine(newVehicle.BrandName);
             Console.WriteLine(newVehicle.ModelName);
+            Console.WriteLine("Hi everyone !");
         }
     }
 }
