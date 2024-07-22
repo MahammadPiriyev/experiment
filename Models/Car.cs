@@ -6,26 +6,22 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Models
 {
-    //Interface
-    interface FirstInterface
+    public class NumberGenerator
     {
-        void MyMethod();
-    }
+		private int myVar;
 
-    interface SecondInterface
-    {
-        void MyOtherMethod();
-    }
+		public int MyNum
+		{
+			get { return myVar; }
+			set
+			{
+				if (value == 50)
+				{
+					myVar = value;
+				}; 
+			}
+		}
 
-    class DemoClass : FirstInterface, SecondInterface
-    {
-        public void MyMethod()
-        {
-            Console.WriteLine("Some text ... ");
-        }
-        public void MyOtherMethod()
-        {
-            Console.WriteLine("Other some text ... ");
-        }
-    }
+	}
+
 }

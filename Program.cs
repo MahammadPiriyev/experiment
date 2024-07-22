@@ -12,19 +12,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Working with files
-            string WritingFiles = "Hello Worlddddd";
-            File.WriteAllText("filename.txt", WritingFiles);
+            NumberGenerator Num = new NumberGenerator();
 
-            string ReadingText = File.ReadAllText("filename.txt");
-            Console.WriteLine(ReadingText);
+            while (true)
+            {
+                Console.WriteLine("Enter a number : ");
+                Num.MyNum = int.Parse(Console.ReadLine());
 
-            File.Delete("filename.txt");
-
-
-            DemoClass demo = new DemoClass();
-            demo.MyMethod();
-            demo.MyOtherMethod();
+                if (Num.MyNum == 50)
+                {
+                    Console.WriteLine("yes it s true!");
+                    break;
+                }
+            }
         }
     }
 }
