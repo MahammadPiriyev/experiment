@@ -8,20 +8,7 @@ namespace ConsoleApp1.Models
 {
     public class NumberGenerator
     {
-		private int myVar;
-
-		public int MyNum
-		{
-			get { return myVar; }
-			set
-			{
-				if (value == 50)
-				{
-					myVar = value;
-				}; 
-			}
-		}
-
+		public int MyNum { get; set; }
 	}
 
 }
