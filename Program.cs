@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ConsoleApp1.Models;
+using System.IO;
 
 namespace ConsoleApp1
 {
@@ -11,11 +12,19 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Vehicle newVehicle = new Vehicle();
-            Console.WriteLine(newVehicle.BrandName);
-            Console.WriteLine(newVehicle.ModelName);
-            Console.WriteLine("Hi everyone !");
-            Console.WriteLine("for pulling");
+            //Working with files
+            string WritingFiles = "Hello Worlddddd";
+            File.WriteAllText("filename.txt", WritingFiles);
+
+            string ReadingText = File.ReadAllText("filename.txt");
+            Console.WriteLine(ReadingText);
+
+            File.Delete("filename.txt");
+
+
+            DemoClass demo = new DemoClass();
+            demo.MyMethod();
+            demo.MyOtherMethod();
         }
     }
 }

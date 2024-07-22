@@ -6,13 +6,26 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Models
 {
-    public class Car
+    //Interface
+    interface FirstInterface
     {
-        public string BrandName = "Ford";
-        public void msg()
-        {
-            Console.WriteLine("Yes it's here ... ");
-        }
+        void MyMethod();
+    }
 
+    interface SecondInterface
+    {
+        void MyOtherMethod();
+    }
+
+    class DemoClass : FirstInterface, SecondInterface
+    {
+        public void MyMethod()
+        {
+            Console.WriteLine("Some text ... ");
+        }
+        public void MyOtherMethod()
+        {
+            Console.WriteLine("Other some text ... ");
+        }
     }
 }
