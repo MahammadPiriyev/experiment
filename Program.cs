@@ -12,18 +12,32 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            NumberGenerator Num = new NumberGenerator();
 
-            while (true)
+            //for (int b = 0; b < 5; b++)
+            //{
+            //    Console.WriteLine("Mahammad Piriyev");
+            //}
+
+            //int i = 0;
+            //while (i < 5)
+            //{
+            //    Console.WriteLine("Mahammad Piriyev");
+            //    i++;
+            //}
+
+            bool BooleanValue = true;
+            int i = 0;
+            while (BooleanValue)
             {
-                Console.WriteLine("Enter a number : ");
-                Num.MyNum = int.Parse(Console.ReadLine());
-
-                if (Num.MyNum == 50)
+                if (i < 5)
                 {
-                    Console.WriteLine("yes it s true!");
+                    Console.WriteLine("Mahammad Piriyev");
+                }
+                else
+                {
                     break;
                 }
+                i++;
             }
         }
     }

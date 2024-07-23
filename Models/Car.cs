@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Models
 {
-    public class NumberGenerator
+    public class Car
     {
-		public int MyNum { get; set; }
+
 	}
 
 }
