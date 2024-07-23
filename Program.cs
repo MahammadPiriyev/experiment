@@ -25,20 +25,20 @@ namespace ConsoleApp1
             //    i++;
             //}
 
-            bool BooleanValue = true;
-            int i = 0;
-            while (BooleanValue)
-            {
-                if (i < 5)
-                {
-                    Console.WriteLine("Mahammad Piriyev");
-                }
-                else
-                {
-                    break;
-                }
-                i++;
-            }
+            //bool BooleanValue = true;
+            //int i = 0;
+            //while (BooleanValue)
+            //{
+            //    if (i < 5)
+            //    {
+            //        Console.WriteLine("Mahammad Piriyev");
+            //    }
+            //    else
+            //    {
+            //        break;
+            //    }
+            //    i++;
+            //}
         }
     }
 }
